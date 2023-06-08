@@ -19,6 +19,11 @@
             Console.WriteLine("\n");
             int size = bst.Size();
             Console.WriteLine("Size: " + size);
+
+            Console.WriteLine("\n");
+            bool found = bst.Search(40);
+            Console.WriteLine("Key found: " + found);
+
         }
     }
 }
