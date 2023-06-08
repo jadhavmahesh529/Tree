@@ -56,6 +56,18 @@ namespace TreeHash
 
             return node;
         }
+        public int Size()
+        {
+            return CalculateSize(Root);
+        }
+
+        public int CalculateSize(INode<T> node)
+        {
+            if (node == null)
+                return 0;
+
+            return 1 + CalculateSize(node.Left) + CalculateSize(node.Right);
+        }
 
         public void Display()
         {

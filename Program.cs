@@ -15,6 +15,10 @@
             bst.Add(10);
             bst.Add(60);
             bst.Display();
+
+            Console.WriteLine("\n");
+            int size = bst.Size();
+            Console.WriteLine("Size: " + size);
         }
     }
 }
